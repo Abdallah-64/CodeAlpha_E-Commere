@@ -1,4 +1,30 @@
-node_modules/
+# Environment & secret configuration files
 .env
+.env.*
+**/.env
+**/.env.*
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Test coverage, build, and cache outputs
 coverage/
+dist/
+build/
+.cache/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS, IDE, and local tool files
 .DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+.superpowers/
