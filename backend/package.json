@@ -1,0 +1,11 @@
+{
+  "name": "lumen-marketplace-backend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node services/seedCatalog.js",
+    "test": "node --test tests/category.test.js tests/product.test.js"
+  }
+}

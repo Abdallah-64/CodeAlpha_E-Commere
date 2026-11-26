@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>LUMEN — Owner &amp; Admin Sign In</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <section class="auth-card">
+      <div class="auth-glow glow-one"></div>
+      <div class="auth-glow glow-two"></div>
+      <div class="auth-top">
+        <a class="brand" href="index.html"><span class="brand-mark">L</span><span>LUMEN</span></a>
+        <span class="access-chip">Owner Access</span>
+      </div>
+      <div class="auth-copy">
+        <p class="eyebrow">Storefront Management</p>
+        <h1>Sign in to Dashboard</h1>
+        <p>Enter your owner credentials to view website inventory, register new products, or delete items.</p>
+      </div>
+      <form id="login-form" class="form-stack">
+        <label>Email address
+          <input id="email" type="email" autocomplete="email" placeholder="name@example.com" required>
+        </label>
+        <label>Password
+          <input id="password" type="password" autocomplete="current-password" placeholder="••••••••••••" required>
+        </label>
+        <p id="login-error" class="form-message" role="alert"></p>
+        <button class="button auth-submit" type="submit">Sign in to Dashboard</button>
+      </form>
+      <div class="auth-footer">Secure Owner Session · LUMEN Atelier</div>
+    </section>
+  </main>
+  <script type="module" src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lumen Marketplace — curated objects for considered everyday living." />
+    <title>LUMEN — Curated Modern Living</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/" aria-label="Lumen home"><span class="brand-mark">L</span><span>LUMEN</span></a>
+        <nav aria-label="Primary navigation" class="nav-links">
+          <a class="is-active" href="/">Shop</a>
+          <a href="#catalog">Collections</a>
+          <a href="#about">About</a>
+          <a class="cart-link" href="#cart">Cart <span id="cart-count">0</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="content-wrap hero-content">
+          <div>
+            <p class="eyebrow">Edition No. 04 / Autumn Showcase</p>
+            <h1 id="hero-title">Curated Modern<br />Living</h1>
+            <p class="hero-copy">Thoughtfully designed objects for considered everyday rituals. Pure materiality, architectural balance, and quiet poise.</p>
+          </div>
+          <div class="hero-note">
+            <p><i></i> Permanent archive release</p>
+            <span>Objects made for your everyday</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="category-showcase" aria-labelledby="category-showcase-title">
+        <div class="content-wrap">
+          <div class="showcase-heading">
+            <div>
+              <p class="eyebrow">Browse by discipline</p>
+              <h2 id="category-showcase-title">A considered collection.</h2>
+            </div>
+            <p>Explore objects shaped by sound, light, time, and the rituals in between.</p>
+          </div>
+          <div id="category-showcase-grid" class="category-showcase-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="catalog" class="catalog-section" aria-labelledby="catalog-title">
+        <div class="content-wrap">
+          <div class="catalog-toolbar">
+            <div id="category-filters" class="filters" aria-label="Product categories"></div>
+            <p id="product-counter" class="counter" aria-live="polite">Loading objects…</p>
+          </div>
+          <div class="section-heading">
+            <p class="eyebrow">The collection</p>
+            <h2 id="catalog-title">Designed with intention.</h2>
+          </div>
+          <div id="catalog-status" class="catalog-status" aria-live="polite"></div>
+          <div id="product-grid" class="product-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="about" class="editorial-section">
+        <div class="content-wrap editorial-inner">
+          <div class="editorial-copy">
+            <p class="eyebrow">The Atelier Story</p>
+            <h2>Pure materiality, architectural balance, quiet poise.</h2>
+            <p>Every piece in the Lumen collection is selected for enduring craftsmanship, tactile restraint, and functional clarity. Designed to enrich daily rituals without visual noise.</p>
+          </div>
+          <div class="editorial-stats">
+            <div class="stat-card">
+              <strong>04</strong>
+              <span>Curated Disciplines</span>
+            </div>
+            <div class="stat-card">
+              <strong>100%</strong>
+              <span>Authentic Origin</span>
+            </div>
+            <div class="stat-card">
+              <strong>№ 26</strong>
+              <span>Archival Release</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="content-wrap footer-inner">
+        <a class="brand" href="/"><span class="brand-mark">L</span><span>LUMEN</span></a>
+        <p>Objects for unhurried living.</p>
+        <div style="display:flex;align-items:center;gap:18px;">
+          <a href="login.html" class="portal-link" style="color:#b2b1ad;text-decoration:none;font-size:10px;text-transform:uppercase;letter-spacing:.08em;">Atelier Portal</a>
+          <span>© 2026 Lumen Marketplace</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Product Quick-View Dialog -->
+    <dialog id="detail-dialog" class="lumen-dialog">
+      <div id="detail-dialog-content"></div>
+    </dialog>
+
+    <!-- Shopping Cart Modal -->
+    <dialog id="cart-dialog" class="lumen-dialog cart-dialog">
+      <div class="cart-panel">
+        <div class="dialog-head">
+          <div>
+            <p class="eyebrow">Your Selection</p>
+            <h2 style="font-size:24px;margin:0;">Atelier Cart</h2>
+          </div>
+          <button class="close-button" id="close-cart-btn" aria-label="Close cart">×</button>
+        </div>
+        <div id="cart-content"></div>
+      </div>
+    </dialog>
+
+    <script type="module" src="js/catalog.js"></script>
+  </body>
+</html>

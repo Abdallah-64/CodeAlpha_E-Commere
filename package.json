@@ -6,11 +6,15 @@
   "scripts": {
     "start": "node backend/server.js",
     "dev": "node --watch backend/server.js",
-    "test": "node --test"
+    "seed": "node backend/services/seedCatalog.js",
+    "frontend": "node frontend/server.js",
+    "test": "node --test backend/tests/category.test.js backend/tests/product.test.js backend/tests/order.test.js frontend/tests/catalog.test.js"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.3",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.3",
     "mongoose": "^8.9.5"
   },
   "devDependencies": {
